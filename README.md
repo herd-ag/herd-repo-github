@@ -2,6 +2,11 @@
 
 Implements `RepoAdapter` from herd-core for GitHub.
 
+Branch creation, pushes, pull requests, merges, and code review operations
+via GitHub CLI and API.
+
+Part of [The Herd](https://github.com/herd-ag/herd-core) ecosystem.
+
 ## Installation
 
 ```bash

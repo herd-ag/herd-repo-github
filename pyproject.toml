@@ -19,7 +19,9 @@ classifiers = [
 dependencies = ["herd-core>=0.0.1"]
 
 [project.urls]
-Repository = "https://github.com/dbt-conceptual/herd-repo-github"
+Homepage = "https://github.com/herd-ag/herd-repo-github"
+Repository = "https://github.com/herd-ag/herd-repo-github"
+Issues = "https://github.com/herd-ag/herd-repo-github/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
