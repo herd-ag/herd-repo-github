@@ -85,8 +85,14 @@ def test_create_branch(adapter):
 
 def test_create_branch_failure(adapter):
     """Test branch creation failure."""
+    import subprocess
+
     with patch("subprocess.run") as mock_run:
-        mock_run.side_effect = Exception("Branch creation failed")
+        mock_run.side_effect = subprocess.CalledProcessError(
+            returncode=1,
+            cmd=["git", "branch"],
+            stderr="Branch creation failed",
+        )
 
         with pytest.raises(RuntimeError, match="Failed to create branch"):
             adapter.create_branch("bad-branch")
