@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "herd-repo-github"
+version = "0.0.1"
+description = "Herd repository operations adapter for GitHub."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Faust Eriksen" }
+]
+keywords = [
+    "ai", "agents", "governance", "herd", "github", "git",
+    "repository-adapter", "pull-requests"
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+dependencies = [
+    "herd-core>=0.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/dbt-conceptual/herd-repo-github"
+Repository = "https://github.com/dbt-conceptual/herd-repo-github"
+Issues = "https://github.com/dbt-conceptual/herd-repo-github/issues"
